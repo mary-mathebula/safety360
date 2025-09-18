@@ -1,0 +1,75 @@
+.container {
+  max-width: 1100px; /* keeps content centered, not too wide */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
+  scroll-padding-top: 80px; /* ✅ ensures smooth scroll with navbar offset */
+}
+
+html {
+  scroll-padding-top: 80px; /* adjust to navbar height */
+}
+
+
+.navbar-toggler {
+  border-color: white;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* General container max width for nice centered content */
+.container {
+  max-width: 1100px;
+}
+
+/* Fix scroll issue with fixed navbar */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Core Values – evenly spaced and centered */
+#values .row {
+  justify-content: center; /* center values */
+}
+#values .col-md-2 {
+  flex: 0 0 auto;
+  width: 180px; /* consistent box size */
+  margin-bottom: 20px;
+}
+#values p {
+  text-align: center;
+}
+
+/* Nature of Business – center boxes */
+#nature .row {
+  justify-content: center;
+}
+#nature .col-md-4 {
+  max-width: 300px;
+}
+
+/* Services – center boxes */
+#services .row {
+  justify-content: center;
+}
+#services .col-md-5 {
+  max-width: 400px;
+}
+
+/* Certificates – center text & list */
+#certifications {
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+#certifications ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block; /* centers the list */
+  text-align: left; /* keep items neatly aligned */
+}
